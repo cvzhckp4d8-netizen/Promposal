@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Promposal for Ishita ❤️</title>
+<style>
+body{
+margin:0;
+font-family:Georgia,serif;
+background:#000;
+color:white;
+overflow-x:hidden;
+text-align:center;
+}
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:30px;
+}
+h1{
+font-size:3em;
+}
+p{
+max-width:700px;
+line-height:1.8;
+font-size:1.2em;
+}
+button{
+padding:15px 35px;
+border:none;
+border-radius:40px;
+font-size:20px;
+background:#ff4f7a;
+color:white;
+cursor:pointer;
+margin-top:30px;
+}
+img{
+width:90%;
+max-width:500px;
+border-radius:20px;
+box-shadow:0 0 30px rgba(255,255,255,.2);
+margin:20px;
+}
+.fade{
+opacity:1;
+transform:none;
+transition:1.2s;
+}
+.fade.show{
+opacity:1;
+transform:translateY(0);
+}
+.heart{
+position:fixed;
+color:#ff6b81;
+animation:float 5s linear infinite;
+}
+@keyframes float{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-20vh);}
+}
+</style>
+</head>
+
+<body>
+
+<audio controls autoplay loop>
+<source src="perfect.mp3" type="audio/mpeg">
+</audio>
+
+<section class="fade">
+<h1>For Someone Who Makes My World Beautiful ❤️</h1>
+<p>From Aditya</p>
+<button onclick="window.scrollBy({top:window.innerHeight,behavior:'smooth'})">Begin ✨</button>
+</section>
+
+<section class="fade">
+
+<p>
+
+Yahan har saltanat hai teri,<br><br>
+
+Har sultan hai tera.<br><br>
+
+Idhar insaan hai tera,<br><br>
+
+Udhar bhagwan hai tera.<br><br>
+
+Zameen se aasmaan tak,<br><br>
+
+Har jagah gungaan hai tera.<br><br>
+
+Meri duniya chal rahi hai aaj tak,<br><br>
+
+Ehsaan hai tera.<br><br>
+
+Aur agar aaj ek sawaal poochhne ki ijazat ho...
+
+</p>
+
+</section>
+
+<section class="fade">
+
+<img src="https://i.postimg.cc/fyvFBk1c/ca6a9b2b-f0d1-4de7-8b18-5d9701c6c5fa.jpg">
+
+<p>
+
+Some places become unforgettable...
+
+because of the person standing beside you.
+
+❤️
+
+</p>
+
+</section>
+
+<section class="fade">
+
+<img src="https://i.postimg.cc/MpGk3b66/IMG-0485.jpg">
+
+<p>
+
+Every memory with you somehow becomes my favorite.
+
+</p>
+
+
+
+</section>
+
+<section class="fade">
+
+<h1>Dear Ishita,</h1>
+
+<p>
+
+I know I couldn't stand outside your college with flowers.
+
+I couldn't surprise you with a poster.
+
+But distance shouldn't stop me from asking the one question I've wanted to ask.
+
+While everyone celebrates prom tonight...
+
+I wanted you to have something you'll always come back to.
+
+A tiny corner of the internet made only for you.
+
+No matter where life takes us...
+
+<b>I'll always choose you.</b>
+
+<br><br>
+
+Love,
+
+<br>
+
+<b>Aditya ❤️</b>
+
+</p>
+
+</section>
+
+<section class="fade">
+
+<h1>Ishita...</h1>
+
+<h2>Will you go to prom with me? ❤️</h2>
+
+<button onclick="yes()">YES ❤️</button>
+
+</section>
+
+<section class="fade" id="end">
+
+<h1>❤️</h1>
+
+<p>
+
+Distance kept me from standing outside your college...
+
+<br><br>
+
+But it could never stop me from making you feel special.
+
+<br><br>
+
+I hope this little website reminds you that you're deeply loved, today and every day.
+
+<br><br>
+
+No matter where life takes us, if I get to choose...
+
+<br><br>
+
+<b>I'll always choose you.</b>
+
+<br><br>
+
+Happy Prom, Ishita. ❤️
+
+<br><br>
+
+Forever yours,
+
+<br>
+
+<b>Aditya</b>
+
+</p>
+
+</section>
+
+<script>
+
+const sections=document.querySelectorAll("section");
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(e=>{
+if(e.isIntersecting)e.target.classList.add("show");
+});
+});
+
+sections.forEach(s=>observer.observe(s));
+
+function next(){
+window.scrollTo({
+top:window.innerHeight,
+behavior:"smooth"
+});
+}
+
+function yes(){
+
+for(let i=0;i<120;i++){
+
+let h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML="❤️";
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.fontSize=(15+Math.random()*30)+"px";
+
+h.style.animationDuration=(3+Math.random()*4)+"s";
+
+document.body.appendChild(h);
+
+}
+
+setTimeout(()=>{
+
+document.getElementById("end").scrollIntoView({behavior:"smooth"});
+
+},1000);
+
+}
+
+</script>
+
+</body>
+
+</html>
+
